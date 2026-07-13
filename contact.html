@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Krisha Ranjan</title>
+    <meta name="description" content="Get in touch with Krisha Ranjan for frontend development, AI/ML collaborations, or media projects.">
+</head>
+<body>
+
+    <header role="banner">
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Get In Touch</h2>
+            <p>Have a project in mind or want to collaborate? Drop a message below.</p>
+
+            <!-- Accessible Form -->
+            <form action="#" method="POST">
+                <div>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required aria-required="true" autocomplete="name">
+                </div>
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
+                </div>
+                <div>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                </div>
+                <button type="submit" aria-label="Submit contact form">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2026 Krisha Ranjan. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
