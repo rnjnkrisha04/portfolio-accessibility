@@ -43,12 +43,33 @@
             </article>
         </section>
 
+        <!-- Interactive Task Management Section (Task 3) -->
+        <section id="todo-app" aria-labelledby="todo-heading" style="margin-top: 50px; padding: 25px; background: var(--card-bg); border-radius: 8px;">
+            <h2 id="todo-heading">Task Management Hub</h2>
+            <p>Manage actionable priorities locally using structural event delegation.</p>
+            
+            <form id="todo-form" style="display:flex; flex-direction:row; gap:10px; margin: 20px 0;">
+                <input type="text" id="todo-input" placeholder="Add a new milestone..." required aria-label="New milestone description" style="flex:1;">
+                <button type="submit">Add Task</button>
+            </form>
+
+            <div class="filter-controls" style="margin-bottom: 20px; display:flex; gap:10px;">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+
+            <ul id="todo-list" style="list-style:none; padding:0; display:flex; flex-direction:column; gap:10px;"></ul>
+        </section>
+
     </main>
 
     <!-- Site Footer -->
     <footer role="contentinfo">
         <p>&copy; 2026 Krisha Ranjan. All rights reserved.</p>
     </footer>
+
+    <script src="app.js"></script>
 
 </body>
 </html>
