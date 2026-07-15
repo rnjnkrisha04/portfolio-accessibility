@@ -227,3 +227,73 @@ footer {
     font-style: italic;
     opacity: 0.7;
 }
+/* Task 5 Capstone Application Layout Styles */
+.store-sub-header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px dashed rgba(128, 128, 128, 0.2);
+}
+.router-nav {
+    display: flex;
+    gap: 12px;
+}
+.route-link {
+    padding: 6px 14px;
+    background: var(--bg-color);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: var(--text-color);
+}
+.route-link.active-route {
+    background: var(--accent-color);
+    color: white !important;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+@media (min-width: 600px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .store-sub-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.product-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color) !important;
+}
+.product-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.product-tag {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--accent-color);
+    letter-spacing: 0.5px;
+}
+.product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 15px;
+}
+.product-price {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.buy-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+}
